@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #c947da;
+    --text-color: #e9b6e2;
+    --primary-color: #009805c2;
+    --secondary-color: #4b4545;
+    --alpha-color: rgb(21, 20, 20);
+    --shadow: 0 10px 30 px var(--alpha-color);
+}
+
+html {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    height:  100vh;
+    max-width: 375px;
+    position: relative;
+    background-color: var(--background);
+    font-family:  sans-serif;
+    color: var(--text-color);
+}
+
+::-webkit-scrollbar { 
+    display: none;
+}
+
+/* main section */
+
+.main-section {
+    width: 100%;
+    padding: 15px;
+    height: 100%;
+    padding-bottom: 100px;
+    overflow-y: auto;
+}
+
+/* Image Gallery */
+
+.gallery {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 1s;
+}
+
+.gallery img.active{
+    opacity: 1;
+    transition: 1s;
+}
+
+.Headboard{
+    margin: 30px 0 10px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+/* song cards */
+
+.song-groups {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.song-cards {
+    flex: 0 0 auto;
+    max-width: 150px;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.picture-cards-songs {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;  
+}
+
+.nombre-tarjetas-canciones {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px;
+}
