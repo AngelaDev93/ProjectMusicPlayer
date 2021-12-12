@@ -214,8 +214,10 @@ body {
 .section-music-player.active .music-seek-bar {
     position: relative;
     display: block;
-    border-radius: 50px;
+    border-radius: 30px;
     margin: auto;
+    height: 15px;
+    width: 100%;
 }
 
 .section-music-player.active .current-song-name {
@@ -260,10 +262,97 @@ body {
     transform: scale(1.3);
 }
 
-.back-bottom {
-    left: 10px;
+.back-button {
+    left: 40px;
 }
 
-.nav-bottom {
-    right: 10px;
+.nav-button {
+    right: 40px;
+}
+
+/* volume button */
+
+.volume-slider {
+    -webkit-appearance: none;
+    width: 85px;
+    height: 20px;
+    position: absolute;
+    right: -50px;
+    bottom: 30px;
+    transform: rotate(-90deg);
+    border-radius: 10px;
+    background: var(--secondary-color);
+    overflow: hidden;
+    opacity: 0;
+    display: none;
+}
+
+.volume-slider.active {
+    opacity: 1;
+    display: block;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 40px;
+    width: 20px;
+    background: var(--primary-color);
+    box-shadow: -200px 0 1px 200px var(--primary-color);
+}
+
+/* playlist section */
+
+.playlist{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 30px 0;
+    background: var(--background);
+    z-index: 3;
+    transition: 1s;
+    overflow: auto;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 18px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.list {
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid var(--secondary-color);
+}
+
+.list-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 20px;
+    position: relative;
+}
+
+.list-cover img {
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list-cover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color:var(--primary-color);
 }
