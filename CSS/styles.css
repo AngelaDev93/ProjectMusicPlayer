@@ -5,7 +5,7 @@
 }
 
 :root{
-    --background: #c947da;
+    --background: #0a409d;
     --text-color: #e9b6e2;
     --primary-color: #ffee00;
     --secondary-color: #5a6db9;
@@ -24,7 +24,7 @@ body{
     height:  100vh;
     max-width: 375px;
     position: relative;
-    background-color: var(--background);
+    background-color: var(--alpha-color);
     font-family:  sans-serif;
     color: var(--text-color);
 }
@@ -121,6 +121,9 @@ body{
     background: var(--alpha-color);
     backdrop-filter: blur(50px);
     transition: 1s;
+}
+.section-music-player.active {
+    right: 100%;
 }
 
 .music-seek-bar{
@@ -307,13 +310,18 @@ body{
     height: 100%;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     padding: 30px 0;
     background: var(--background);
     z-index: 3;
     transition: 1s;
     overflow: auto;
 }
+
+.playlist.active {
+    right: 0;
+}
+
 
 .title{
     font-weight: 300;
@@ -354,8 +362,8 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
-    color: var(--primary-color);
-    display: none;
+    color: white;
+    display: none;  
 }
 
 .list .active i{
@@ -364,4 +372,5 @@ body{
 
 .list .name{
     font-size: 20px;
+    text-transform: capitalize;
 }
