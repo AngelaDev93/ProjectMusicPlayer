@@ -1,5 +1,17 @@
 let songs = [
     {
+        name: 'Unstoppable',
+        path: 'Accesos/Musica/songsia.mp3',
+        artist: 'Sia',
+        cover: 'Accesos/Imagenes/img18.jpeg'
+    },
+    {
+        name: 'Woman',
+        path: 'Accesos/Musica/songdojacat.mp3',
+        artist: 'Doja Cat',
+        cover: 'Accesos/Imagenes/img20.jpeg'
+    },
+    {
         name: 'The Motto',
         path: 'Accesos/Musica/SongElectronica.mp3',
         artist: 'Tiesto & Ava Max',
@@ -10,6 +22,12 @@ let songs = [
         path: 'Accesos/Musica/songMonsieur.m4a',
         artist: 'Monsieur Perine',
         cover: 'Accesos/Imagenes/img12.jpeg'
+    },
+    {
+        name: 'Lejos Conmigo',
+        path: 'Accesos/Musica/songgreeicy.mp3',
+        artist: 'Greeicy & Alejandro Sanz',
+        cover: 'Accesos/Imagenes/img19.jpeg'
     },
     {
         name: 'Saca,prende y sorprende',
