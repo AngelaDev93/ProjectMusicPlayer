@@ -1,2 +1,2 @@
 # ProjectMusicPlayer
-Proyecto que muestra una simulación de reproductor de música
+Project that shows a simulation of a music player.
