@@ -10,11 +10,12 @@
 </head>
 <body>
     
-    <!--main section-->
+    <audio src="" id="audio-source"></audio>
 
+    <!--Main Section-->
     <section class="main-section">
         
-        <!--Image gallery-->
+        <!--Gallery Images -->
         <div class="gallery">
           <img src="./Accesos/Imagenes/img1.jpeg" class="active" alt="">
           <img src="./Accesos/Imagenes/img4.jpeg" alt="">
@@ -25,8 +26,8 @@
           <img src="./Accesos/Imagenes/img17.jpeg" alt="">
         </div>
 
-        <!--PlayList-->
-
+       
+        <!--Songs Cards-->
         <h1 class="Headboard">Recently Played Music</h1>
         
         <div class="song-groups">
@@ -53,7 +54,7 @@
             </div>
         </div>
         
-        
+        <!--Songs Cards 2-->
         <h1 class="Headboard">Popular Songs</h1>
         
         <div class="song-groups">
@@ -80,7 +81,8 @@
             </div>
         </div>
     </section>
-
+   
+    <!--Music Section-->
     <section class="section-music-player">
 
         <img src="/Accesos/Imagenes/back.png" class="back-button icon hide" alt="">
@@ -96,23 +98,23 @@
             <p class="current-time hide">00 : 00</p>
             <p class="duration hide">00 : 00</p>
         </div>
-
+  
+        <!--Controls Music Section-->
         <div class="controls">
             <span class="fas fa-redo"></span>
-            <div class="main">
-                <i class="fas fa-backward active"></i>
-                <i class="fas fa-play active"></i>
-                <i class="fas fa-pause"></i>
-                <i class="fas fa-forward active"></i>
-            </div>
-            <input type="range" class="volume-slider" max="1" value="1" step="0.5">
+               <div class="main">
+                  <i class="fas fa-backward active"></i>
+                  <i class="fas fa-play active"></i>
+                  <i class="fas fa-pause"></i>
+                  <i class="fas fa-forward active"></i>
+                </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
             <span class="fas fa-volume-up"></span>
-
         </div>
-
     </section>
 
-    <section class="playlist">
+    <!--Songs Playlist-->
+    <section class="playlist ">
 
         <img src="Accesos/Imagenes/back.png" class="back-button icon" alt="">
 
