@@ -5,11 +5,11 @@
 }
 
 :root{
-    --background: #0a409d;
-    --text-color: #e9b6e2;
-    --primary-color: #ffee00;
-    --secondary-color: #5a6db9;
-    --alpha-color: rgb(90, 162, 191);
+    --background: #4837FA;
+    --text-color: #F5E2F2;
+    --primary-color: #FFEE00;
+    --secondary-color: #5A6DB9 ;
+    --alpha-color: #6F31DE;
     --shadow: 0 10px 30 px var(--alpha-color);
 }
 
@@ -168,6 +168,7 @@ body{
     display: none;
     opacity: 0;
     transition: 1s;
+    color: var(--text-color);
 }
 
 .section-music-player.active .controls{
@@ -239,8 +240,8 @@ body{
 }
 
 .cover{
-    width: 40vh;
-    height: 40vh;
+    width: 45vh;
+    height: 45vh;
     object-fit: cover;
     margin: auto;
     border-radius: 50px;
@@ -312,7 +313,7 @@ body{
     top: 0;
     right: -100%;
     padding: 30px 0;
-    background: var(--background);
+    background: var(--alpha-color);
     z-index: 3;
     transition: 1s;
     overflow: auto;
